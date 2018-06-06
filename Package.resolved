@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Socket",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueSocket",
+        "state": {
+          "branch": null,
+          "revision": "26c8f4e4e3000421a0c97aaf0c7b5e9aa5475222",
+          "version": "0.12.94"
+        }
+      },
+      {
+        "package": "OSCCore",
+        "repositoryURL": "https://github.com/segabor/OSCCore.git",
+        "state": {
+          "branch": null,
+          "revision": "d08d60edd5a516839f41d872a3c1f80690a61393",
+          "version": "0.9.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
