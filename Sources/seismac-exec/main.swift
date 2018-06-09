@@ -28,13 +28,9 @@ func startup() {
             print ("========== fail ==========")
         } else {
             
-            let msgx = OSCMessage(address: "/seism/x", args: ["x", accel.x])
-            let msgy = OSCMessage(address: "/seism/y", args: ["y", accel.y])
-            let msgz = OSCMessage(address: "/seism/z", args: ["z", accel.z])
+            let msg = OSCMessage(address: "/seism", args: ["x", accel.x, "y", accel.y, "z", accel.z])
             let channel: UDPClient? = UDPClient(host: "127.0.0.1", port: 7401)
-            msgx.send(over: channel!)
-            msgy.send(over: channel!)
-            msgz.send(over: channel!)
+            msg.send(over: channel!)
             
             print("=====")
             print("x: \(accel.x)")
